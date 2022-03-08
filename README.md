@@ -7,7 +7,7 @@ First, clone repo:
 $ git clone https://github.com/6reg/rails-app.git
 ```
 
-Set compatible version of Node.js
+Then, set compatible version of Node.js:
 
 ```
 $ nvm install 16.13.0
