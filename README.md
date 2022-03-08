@@ -1,12 +1,13 @@
-# 6reg's rails App
+# 6reg's rails app
 
 ## Getting started
 
+First, clone repo:
 ```
 $ git clone https://github.com/6reg/rails-app.git
 ```
 
-Use compatible version of Node.js
+Set compatible version of Node.js
 
 ```
 $ nvm install 16.13.0
