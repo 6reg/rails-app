@@ -1,24 +1,46 @@
-# README
+# 6reg's rails App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Getting started
 
-Things you may want to cover:
+```
+$ git clone https://github.com/6reg/rails-app.git
+```
 
-* Ruby version
+Use compatible version of Node.js
 
-* System dependencies
+```
+$ nvm install 16.13.0
+$ node -v
+v16.13.0
+```
 
-* Configuration
+Install needed packages (skip any gems needed only in production):
 
-* Database creation
+```
+$ yarn add jquery@3.5.1 bootsrap@3.4.1
+$ gem install bundler -v 2.2.17
+$ bundle _2.2.17_ config set --local without 'production'
+$ bundle _2.2.17_ install
+```
 
-* Database initialization
+Next, migrate database:
 
-* How to run the test suite
+```
+$ rails db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Finally, run test suite to verify everything's working:
 
-* Deployment instructions
+```
+$ rails test
+```
 
-* ...
+If test suite passes, you'll be ready to seed the database with sample
+users and run the app in a local server:
+
+```
+$ rails db:seed
+$ rails server
+```
+
+
